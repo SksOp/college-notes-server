@@ -1,0 +1,24 @@
+GET http://localhost:3001/search/ASH404
+
+###
+POST http://localhost:3001/contribute
+Content-Type: application/json
+
+{
+	"name":"vlsi",
+    "subCode":"ASH 404",
+    "semester":"7",
+    "department":"ECE",
+    "uploadedby":"shubh",
+    "college":"sot",
+    "url":"someurl"
+}
+###
+POST http://localhost:3001/search/
+Content-Type: application/json
+
+{
+	"keyword":"ASH404"
+}
+###
+GET http://localhost:3001/notes/63d4f075e0c68632bcf24f68
